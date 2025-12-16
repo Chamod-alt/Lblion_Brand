@@ -6,11 +6,14 @@ const Tutorial = () => {
   return (
     <div className="dashboard-container">
        <aside className="sidebar">
-         <Sidebar />
+        <aside className="sidebar">
+          <aside className="sidebar">
+            <aside className="sidebar"></aside>
+          </aside>
+        </aside>
+ 
 
-          <Sidebar />
-           <Sidebar />
-        <Sidebar />
+    {/*-------------------------------------------------*/}
       </aside>
       <main className="main-content">
     <div className="support-container" style={{backgroundColor:"white"}}>
