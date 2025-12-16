@@ -6,21 +6,10 @@ const Tutorial = () => {
   return (
     <div className="dashboard-container">
        <aside className="sidebar">
-       {/*<div className="sidebar-header">CWinCatch</div>
-        <ul className="sidebar-menu">
-          <li className="active">Dashboard</li>
-          <li>Profile</li>
-          <li>Investment</li>
-          <li>Withdraw Asset</li>
-          <li>My Wallet</li>
-          <li>Referral System</li>
-          <li>Income Details</li>
-          <li>Summery</li>
-          <li>Customer Support</li>
-        </ul>
-        
-        */}
+         <Sidebar />
 
+          <Sidebar />
+           <Sidebar />
         <Sidebar />
       </aside>
       <main className="main-content">
