@@ -6,12 +6,31 @@ const Tutorial = () => {
   return (
     <div className="dashboard-container">
        <aside className="sidebar">
-        <aside className="sidebar">
-          <aside className="sidebar">
-            <aside className="sidebar"></aside>
-          </aside>
-        </aside>
- 
+   <main className="main-content">
+    <div className="support-container" style={{backgroundColor:"white"}}>
+       <footer className="footer">
+        <span>Copyright 2025</span>
+        <div>
+          <a href="#">Help</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
+        </div>
+      </footer>
+      <div className="ticket-card">
+         <footer className="footer">
+        <span>Copyright 2025</span>
+        <div>
+          <a href="#">Help</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
+        </div>
+      </footer>
+      </div>
+
+      <footer className="footer">
+        <span>Copyright 2025</span>
+        <div>
+          <a href="#">Help</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
+        </div>
+      </footer>
+    </div>
+    </main>
 
     {/*-------------------------------------------------*/}
       </aside>
