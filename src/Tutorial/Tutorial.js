@@ -6,11 +6,27 @@ const Tutorial = () => {
   return (
     <div className="dashboard-container">
        <aside className="sidebar">
-         <Sidebar />
+   <main className="main-content">
+    <div className="support-container" style={{backgroundColor:"white"}}>
+      <div className="breadcrumb">Home &gt; Dashboard &gt; Support Tickets</div>
+       <h2>Vedio Tutorials</h2>
+      <div className="ticket-card">
+        <div className="ticket-header">
+          <span>Video Tutorial</span>
+          
+        </div>
+      </div>
 
-          <Sidebar />
-           <Sidebar />
-        <Sidebar />
+      <footer className="footer">
+        <span>Copyright 2025</span>
+        <div>
+          <a href="#">Help</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
+        </div>
+      </footer>
+    </div>
+    </main>
+
+    {/*-------------------------------------------------*/}
       </aside>
       <main className="main-content">
     <div className="support-container" style={{backgroundColor:"white"}}>
