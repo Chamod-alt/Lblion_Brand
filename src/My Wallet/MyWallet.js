@@ -21,90 +21,67 @@ const WalletDashboard = () => {
     
   return (
     <div>
-    <div className="investment-dashboard">
-    <div className="sidebar">
-        <h2 className="brand">CWinCatch</h2>
+    <div className="kyc-dashboard">
+      <div className="sidebar">
+        <h2 className="brand">Lblion Brand</h2>
         <ul className="menu">
           <li>Dashboard</li>
-          <li>
-            Profile
-          </li>
           <li className="expandable active">
-            Investment
+            Profile
             <ul className="submenu">
-              <li className="highlighted">Deposit</li>
-              <li>My Asset Details</li>
-              <li>Purchase History</li>
+              <li>Personal Details</li>
+              <li className="highlighted">KYC</li>
             </ul>
           </li>
+          <li>Investment</li>
           <li>Withdraw Asset</li>
           <li>My Wallet</li>
           <li>Referral System</li>
+          <li>Income Details</li>
         </ul>
       </div>
-    <div className='wallet'>
-         
-    <div className="wallet-page">
-      <div className="wallet-header">
-        <h2>Daily Trade Income Settings</h2>
-        <p>
-          To receive trade income for tomorrow (2025-05-07), please enable this option. If disabled,
-          you will not receive any trade income, including daily income or other earnings. This setting
-          resets automatically each day, so you must enable it daily to continue receiving profits.
-        </p>
-        <div className="toggle-btn">
-          <div className="toggle-circle" />
+
+      <div className="main-content">
+        <header className="topbar">
+          <nav>
+            <span>Dashboard</span>
+            <span>Wallet</span>
+            <span>Transaction</span>
+            <span>Support Ticket</span>
+          </nav>
+        </header>
+
+        <div className="page-header">
+          <h3>My KYC</h3>
+          <p className="breadcrumbs">Home &gt; Dashboard &gt; KYC</p>
         </div>
+
+        <section className="kyc-section">
+          <h4 className="section-title">ACTIVE KYC ENTRIES</h4>
+          <div className="kyc-table">
+            <div className="kyc-row header">
+              <span>KYC TYPE</span>
+              <span># REQUIRED DOCUMENTS</span>
+              <span>STATUS</span>
+              <span>ACTION</span>
+            </div>
+            {/* Active entries can be dynamically populated here */}
+          </div>
+
+          <h4 className="section-title">REQUIRED / OPTIONAL KYC ENTRIES</h4>
+          <div className="kyc-table">
+            {kycOptions.map((entry, i) => (
+              <div className="kyc-row" key={i}>
+                <span>{entry.type}</span>
+                <span>{entry.documents}</span>
+                <span className="status">{entry.status}</span>
+                <button className="select-btn">Select</button>
+              </div>
+            ))}
+          </div>
+        </section>
       </div>
-
-      <div className="wallet-summary">
-        <div className="wallet-card">
-          <div className="wallet-icon">💼</div>
-          <h3>INTERNAL WALLET</h3>
-          <p className="balance">0.00</p>
-          <p className="label">AVAILABLE BALANCE</p>
-        </div>
-        <div className="wallet-card-card">
-        <div className="info-card">
-          <p>USDT 0.00</p>
-          <span>Income ➜ This Month</span>
-        </div>
-
-        <div className="info-card">
-          <p>USDT 0.00</p>
-          <span>Commissions ➜ This Month</span>
-        </div>
-
-        <div className="info-card">
-          <p>USDT 0.00</p>
-          <span>Withdraw ➜ This Month</span>
-        </div>
-
-        <div className="info-card">
-          <p>USDT 0.00</p>
-          <span>Disqualified ➜ This Month</span>
-        </div>
-      </div>
-      </div>
-
-      <div className="chart-container">
-      <h3>Current Week Earnings</h3>
-      <ResponsiveContainer width="100%" height={300}>
-        <LineChart data={data}>
-          <XAxis dataKey="day" stroke="#ccc" />
-          <YAxis stroke="#ccc" />
-          <Tooltip />
-          <Legend />
-          <Line type="monotone" dataKey="PACKAGE" stroke="#f47191" dot={{ r: 4 }} />
-          <Line type="monotone" dataKey="DIRECT" stroke="#4682f4" dot={{ r: 4 }} />
-          <Line type="monotone" dataKey="INDIRECT" stroke="#41b4a5" dot={{ r: 4 }} />
-          <Line type="monotone" dataKey="P2P" stroke="#f4d34a" dot={{ r: 4 }} />
-        </LineChart>
-      </ResponsiveContainer>
     </div>
-    </div>
-    </div>
-    </div>  
     </div>
   );
 };
