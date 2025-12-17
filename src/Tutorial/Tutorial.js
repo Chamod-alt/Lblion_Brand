@@ -9,7 +9,7 @@ const Tutorial = () => {
    <main className="main-content">
     <div className="support-container" style={{backgroundColor:"white"}}>
        <footer className="footer">
-        <span>Copyright 2025</span>
+        <span>Copyright 2025 secound </span>
         <div>
           <a href="#">He</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
         </div>
@@ -19,7 +19,7 @@ const Tutorial = () => {
       </footer>
       <div className="ticket-card">
          <footer className="footer">
-        <span>Copyright 2025</span>
+        <span>Copyright 2025 secound</span>
         <div>
           <a href="#">Help</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
         </div>
