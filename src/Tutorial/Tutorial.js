@@ -11,7 +11,7 @@ const Tutorial = () => {
        <footer className="footer">
         <span>Copyright 2025 secound </span>
         <div>
-          <a href="#">He</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
+          <a href="#">He this is secound</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
         </div>
          <div>
           <a href="#">Help</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
@@ -27,7 +27,7 @@ const Tutorial = () => {
       </div>
 
       <footer className="footer">
-        <span>Copyright 2025</span>
+        <span>Copyright 2025 yhis is third</span>
         <div>
           <a href="#">Help</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
         </div>
