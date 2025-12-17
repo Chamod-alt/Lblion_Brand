@@ -7,27 +7,12 @@ const Tutorial = () => {
     <div className="dashboard-container">
        <aside className="sidebar">
    <main className="main-content">
-    <div className="support-container" style={{backgroundColor:"white"}}>
-       <footer className="footer">
-        <span>Copyright 2025</span>
-        <div>
-          <a href="#">He</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
-        </div>
-         <div>
-          <a href="#">Help</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
-        </div>
-      </footer>
-      <div className="ticket-card">
-         <footer className="footer">
-        <span>Copyright 2025</span>
-        <div>
-          <a href="#">Help</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
-        </div>
-      </footer>
-      </div>
+    <p>this is third</p>
+      </main>
+      </aside>
 
       <footer className="footer">
-        <span>Copyright 2025</span>
+        <span>Copyright 2025 yhis is third</span>
         <div>
           <a href="#">Help</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
         </div>
