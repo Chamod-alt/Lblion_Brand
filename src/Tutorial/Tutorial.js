@@ -11,6 +11,9 @@ const Tutorial = () => {
        <footer className="footer">
         <span>Copyright 2025</span>
         <div>
+          <a href="#">He</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
+        </div>
+         <div>
           <a href="#">Help</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
         </div>
       </footer>
